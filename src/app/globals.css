@@ -1,8 +1,8 @@
-@tailwind base;
-@tailwind components;
+/* @tailwind base; */
+/* @tailwind components; */
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -15,13 +15,40 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*/
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #455054;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+button {
+  font-size: 20px;
+}
+
+h2 {
+  color: #831010;
+}
+
+.bg {
+  background: linear-gradient(0deg, #0004, #0005), url(/wp.jpg);
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+  filter: blur(10px);
+  position: fixed;
+  left: 0;
+  top: 0;
 }
