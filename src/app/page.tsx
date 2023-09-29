@@ -64,7 +64,6 @@ const WordGame = () => {
     }
 
     setMovieIndex(movieIndex + 1)
-
     setCurrentMovie(movie)
     loadMovieDetails(movie.id)
   }
@@ -73,6 +72,12 @@ const WordGame = () => {
     document.querySelectorAll('input').forEach(e => {
       e.innerText = e.value
     })
+  }
+
+  const uniqueCharacters = (): string[] => {
+    const allChars = currentMovieTitleCompacted()?.split('')
+    const set = new Set(allChars)
+    return Array.from(set)
   }
 
   const getGuessedLetter = (index: number): string => {
@@ -122,21 +127,35 @@ const WordGame = () => {
           {/* <div className='debug'>{currentMovieTitle()}</div> */}
           <h4 className='mt-6 my-4'>Movie {movieIndex}</h4>
           <div className='flex mt-2 mb-4 text-lg'>
-            <div className='rounded-sm p-2 bg-amber-100 text-amber-700 mr-2'>
-              <i className='lni lni-popup mr-1'></i>
-              {currentMovieDetails?.genres?.map(g => g.name).join(', ')}
+            <div
+              className='rounded-sm p-2 bg-amber-100 text-amber-700 mr-2'
+              style={{ textTransform: 'uppercase', fontWeight: 600 }}
+            >
+              <i className='lni lni-popup mr-2 relative top-[2px]'></i>
+              <span className='text-sm'>
+                {currentMovieDetails?.genres?.map(g => g.name).join(', ')}
+              </span>
             </div>{' '}
             <div className='rounded-sm p-2 bg-purple-100 text-purple-700 mr-2'>
-              <i className='lni lni-calendar mr-1'></i>
+              <i className='lni lni-calendar mr-2'></i>
               {new Date(currentMovie?.release_date || '').toLocaleDateString(
                 'en-US',
                 { month: 'short', year: 'numeric' }
               )}
             </div>
-            <div className='rounded-sm p-2 bg-green-100 text-green-700'>
-              <i className='lni lni-star-fill mr-1'></i>
+            <div className='rounded-sm p-2 bg-green-100 text-green-700 mr-2'>
+              <i className='lni lni-star-fill mr-2'></i>
               {currentMovie?.vote_average} stars
             </div>
+            <div
+              className='rounded-sm p-2 bg-blue-100 text-blue-700'
+              style={{ textTransform: 'uppercase', fontWeight: 600 }}
+            >
+              <i className='fa fa-info-circle mr-2' aria-hidden='true'></i>
+              <span className='text-sm'>
+                {currentMovie?.clue?.join(', ') ?? 'N/A'}
+              </span>
+            </div>{' '}
           </div>
 
           <div className='progress-circle'>
@@ -200,10 +219,8 @@ const WordGame = () => {
               Congratulations! You guessed the movie{' '}
               <span style={{ fontWeight: 'bold' }}>{currentMovieTitle()}</span>{' '}
               in {tries} {triesWord()} (
-              {Math.round(
-                ((currentMovieTitleCompacted()?.length || 1) / tries) * 100
-              )}
-              % efficiency)! Click on the button below to begin a new game.
+              {Math.round((uniqueCharacters().length / tries) * 100)}%
+              efficiency)! Click on the button below to begin a new game.
             </div>
           )}
           <div className='my-4 flex justify-center items-center'>

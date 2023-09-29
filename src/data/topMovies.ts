@@ -17,6 +17,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.7,
     vote_count: 18668,
+    clue: ['offer'],
   },
   {
     adult: false,
@@ -34,6 +35,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.7,
     vote_count: 24640,
+    clue: ['escape'],
   },
   {
     adult: false,
@@ -51,6 +53,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.5,
     vote_count: 30608,
+    clue: ['guardian', 'coin'],
   },
   {
     adult: false,
@@ -85,6 +88,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.5,
     vote_count: 25398,
+    clue: ['run'],
   },
   {
     adult: false,
@@ -102,6 +106,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.4,
     vote_count: 27223,
+    clue: ['rule'],
   },
   {
     adult: false,
@@ -109,16 +114,17 @@ export const topMovies: Movie[] = [
     genre_ids: [18],
     id: 510,
     original_language: 'en',
-    original_title: "One Flew Over the Cuckoo's Nest",
+    original_title: 'One Flew Over the Cuckoos Nest',
     overview:
       'A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.',
     popularity: 36.905,
     poster_path: '/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg',
     release_date: '1975-11-19',
-    title: "One Flew Over the Cuckoo's Nest",
+    title: 'One Flew Over the Cuckoos Nest',
     video: false,
     vote_average: 8.4,
     vote_count: 9644,
+    clue: ['joker', 'penguin'],
   },
   {
     adult: false,
@@ -136,6 +142,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.4,
     vote_count: 32552,
+    clue: ['wormhole'],
   },
   {
     adult: false,
@@ -153,6 +160,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.4,
     vote_count: 23314,
+    clue: ['precious'],
   },
   {
     adult: false,
@@ -170,6 +178,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.4,
     vote_count: 15765,
+    clue: ['emperor', 'telekinesis'],
   },
   {
     adult: false,
@@ -187,6 +196,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.4,
     vote_count: 34482,
+    clue: ['idea'],
   },
   {
     adult: false,
@@ -204,6 +214,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.4,
     vote_count: 5890,
+    clue: ['hitchcock'],
   },
   {
     adult: false,
@@ -221,6 +232,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.3,
     vote_count: 14997,
+    clue: ['fbi training'],
   },
   {
     adult: false,
@@ -238,6 +250,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.3,
     vote_count: 18437,
+    clue: ['time travel'],
   },
   {
     adult: false,
@@ -255,6 +268,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.3,
     vote_count: 3391,
+    clue: ['charlie chaplin'],
   },
   {
     adult: false,
@@ -272,6 +286,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.3,
     vote_count: 16984,
+    clue: ['africa', 'betrayal'],
   },
   {
     adult: false,
@@ -289,6 +304,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.3,
     vote_count: 3706,
+    clue: ['science', 'war'],
   },
   {
     adult: false,
@@ -323,6 +339,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.2,
     vote_count: 14651,
+    clue: ['wwii', 'behind enemy lines'],
   },
   {
     adult: false,
@@ -340,6 +357,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.2,
     vote_count: 14690,
+    clue: ['magician', 'scientist', 'double'],
   },
   {
     adult: false,
@@ -357,23 +375,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.2,
     vote_count: 9603,
-  },
-  {
-    adult: false,
-    backdrop_path: '/5Lbm0gpFDRAPIV1Cth6ln9iL1ou.jpg',
-    genre_ids: [18, 37],
-    id: 68718,
-    original_language: 'en',
-    original_title: 'Django Unchained',
-    overview:
-      'With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.',
-    popularity: 54.224,
-    poster_path: '/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg',
-    release_date: '2012-12-25',
-    title: 'Django Unchained',
-    video: false,
-    vote_average: 8.2,
-    vote_count: 24668,
+    clue: ['trick', 'devil'],
   },
   {
     adult: false,
@@ -408,6 +410,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.1,
     vote_count: 11744,
+    clue: ['a.i.', 'cyborg'],
   },
   {
     adult: false,
@@ -442,6 +445,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8.1,
     vote_count: 13784,
+    clue: ['theft', 'renaissance']
   },
   {
     adult: false,
@@ -459,6 +463,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8,
     vote_count: 22218,
+    clue: ['fraud', 'new york']
   },
   {
     adult: false,
@@ -476,6 +481,7 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8,
     vote_count: 20036,
+    clue: ['magic', 'prison']
   },
   {
     adult: false,
@@ -493,5 +499,6 @@ export const topMovies: Movie[] = [
     video: false,
     vote_average: 8,
     vote_count: 15971,
+    clue: ['cryptography', 'war']
   },
 ]
