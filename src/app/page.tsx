@@ -246,7 +246,15 @@ const WordGame = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div>{' '}
+      <button
+        className='fixed bottom-[10px] right-[10px] bg-transparent text-white cursor-pointer border-0 transition-all z-10 p-8 fs'
+        onClick={() => {
+          document.body.requestFullscreen()
+        }}
+      >
+        <i className='fa fa-arrows-alt' aria-hidden='true'></i>
+      </button>
     </>
   )
 }

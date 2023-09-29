@@ -53,3 +53,11 @@ h1 {
   left: 0;
   top: 0;
 }
+
+.fs {
+  opacity: 0;
+}
+
+.fs:hover {
+  opacity: 1;
+}

@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <div className='bg'></div>
-        <div className='fixed top-[40px] flex justify-center items-center'></div>
+        <div className='fixed top-[40px] flex justify-center items-center'></div>{' '}
       </body>
     </html>
   )
