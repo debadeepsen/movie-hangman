@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/google-font-display */
 import './globals.css'
@@ -26,6 +27,8 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <div className='bg'></div>
+        <div className='fixed top-[40px] flex justify-center items-center'>
+        </div>
       </body>
     </html>
   )

@@ -35,8 +35,9 @@ button {
   font-size: 20px;
 }
 
-h2 {
+h1 {
   color: #831010;
+  font-weight: 600;
 }
 
 .bg {
