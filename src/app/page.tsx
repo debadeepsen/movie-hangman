@@ -182,7 +182,7 @@ const WordGame = () => {
             <span style={{ fontWeight: 'bold' }}>{currentMovieTitle()}</span> in{' '}
             {tries} {triesWord()} (
             {Math.round(
-              (tries / (currentMovieTitleCompacted()?.length || 1)) * 100
+              ((currentMovieTitleCompacted()?.length || 1) / tries) * 100
             )}
             % efficiency)! Click on the button below to begin a new game.
           </div>
