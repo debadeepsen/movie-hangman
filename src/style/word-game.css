@@ -97,7 +97,8 @@
   align-items: center;
 }
 
-#new_game {
+#new_game,
+#reveal {
   border: 1px solid var(--linkColor);
   /* box-shadow: 0px 0px 3px var(--linkColor); */
   background: #fff !important;
@@ -107,7 +108,13 @@
   transition: all 0.2s;
 }
 
-#new_game:hover {
+#reveal {
+  color: #2d880f;
+  border: 1px solid #2d880f;
+  margin-right: 10px;
+}
+
+#new_game:hover, #reveal:hover {
   transform: scale(1.1);
 }
 

@@ -69,6 +69,12 @@ const WordGame = () => {
     loadMovieDetails(movie.id)
   }
 
+  const reveal = () => {
+    document.querySelectorAll('input').forEach(e => {
+      e.innerText = e.value
+    })
+  }
+
   const getGuessedLetter = (index: number): string => {
     if (currentMovieTitle() === undefined) return ''
 
@@ -114,7 +120,7 @@ const WordGame = () => {
         <div className='flex flex-col justify-center items-center'>
           <h1>Guess the movie!</h1>
           {/* <div className='debug'>{currentMovieTitle()}</div> */}
-            <h4 className='mt-6 my-4'>Movie {movieIndex}</h4>
+          <h4 className='mt-6 my-4'>Movie {movieIndex}</h4>
           <div className='flex mt-2 mb-4 text-lg'>
             <div className='rounded-sm p-2 bg-amber-100 text-amber-700 mr-2'>
               <i className='lni lni-popup mr-1'></i>
@@ -201,12 +207,21 @@ const WordGame = () => {
             </div>
           )}
           <div className='my-4 flex justify-center items-center'>
+            {/* <button
+              id='reveal'
+              className={
+                'my-4 py-3 px-8 border-0 rounded-sm shadow-lg cursor-pointer text-white text-md flex justify-center items-center'
+              }
+              onClick={reveal}
+            >
+              <i className='lni lni-game mr-4' style={{ fontSize: 32 }}></i>
+              Reveal
+            </button> */}
             <button
               id='new_game'
               className={
                 'my-4 py-3 px-8 border-0 rounded-sm shadow-lg cursor-pointer text-white text-md flex justify-center items-center'
               }
-              style={{ background: 'var(--linkColor)' }}
               onClick={loadGame}
             >
               <i className='lni lni-game mr-4' style={{ fontSize: 32 }}></i>
