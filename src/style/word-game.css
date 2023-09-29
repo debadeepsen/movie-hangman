@@ -134,7 +134,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, #fff, #eee);
+  background: #fff;
   box-shadow: 0px 1px 10px #1112;
   margin-top: -100px;
   border-radius: 24px;

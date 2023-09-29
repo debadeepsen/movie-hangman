@@ -213,7 +213,7 @@ const WordGame = () => {
           </div>
           {puzzleSolved() && (
             <div
-              className='my-4 mt-8 text-md text-center'
+              className='my-4 mt-8 p-5 text-md text-center bg-zinc-100 rounded-md'
               style={{ fontSize: 18 }}
             >
               Congratulations! You guessed the movie{' '}
